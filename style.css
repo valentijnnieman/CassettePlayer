@@ -1,0 +1,162 @@
+@import url(http://fonts.googleapis.com/css?family=Amatic+SC);
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,700);
+
+#soundcloud-icon{
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin-right:5%;
+}
+
+#songlist{
+	display: inline-block;
+	list-style-type: none;
+	top: 111px;
+	font-family: Amatic SC;
+	font-size: 150%;
+	font-style: bold;
+
+	float: right;
+	margin-right: 40%;
+}
+
+#songlist, li{
+	border-bottom: 1px solid black;
+}
+
+#audio-player{
+	height: 500px;
+	width: 800px;
+	border-radius: 15px;
+	background-color: #393939;
+	box-shadow: 0 13px 15px;
+	display: inline-block;
+}
+
+#js-cassette{
+    position: absolute;
+	margin: 15px 0px 5px 25px;
+	height: 378px;
+	width: 600px;
+	border-radius : 15px;
+	box-shadow: rgba(0,0,0,0.5) 0 -3px 5px,rgba(255,255,255,0.5) 0 3px 5px;
+    background-image: url("cassette.png");
+}
+
+.controls {
+	width: 22em;
+	height: 4.4em;
+	position: absolute;
+	left: 150px;
+	top: 390px;
+}
+
+img {
+	height: 99%;
+	width: 99%;
+}
+
+.ctrl-btn {
+	color: white;
+	background-color: #393939;
+	border: 1px solid black;
+	border-radius: 50px;
+
+	width: 20%;
+	height: 100%;
+	display: inline-block;
+	font-family: Amatic SC;
+	font-size: 32px;
+	
+	box-shadow: 2px 1px 0px black, -1px 1px 0px black;
+}
+
+.cassette-label {
+	font-family: 'Amatic SC';
+	font-size: 150%;
+	
+	border: 1px solid black;
+	border-radius: 15px;
+	
+	padding: 5px;
+
+	text-align: center;
+	
+	margin-top: 7%;
+	margin-left: 25%;
+	margin-right: 25%;
+
+	box-shadow: 1px 1px 0px 0px;
+}
+
+.deck-speaker {
+	display: block;
+	background-color: rgba(0,0,0,0.15);
+    height: 90px;
+	width: 130px;
+    position: absolute;
+	left: 610px;
+	top: 75px;
+    border-radius: 100px;
+    box-shadow: rgba(255,255,255,0.1) 0 1px 0,rgba(0,0,0,0.5) 0 1px 3px inset;
+	padding: 10px;
+}
+
+.deck-speaker div {
+	height: 2px;
+	border: 2px solid #1D1D1D;
+	border-radius: 15px;
+	background-color: #1D1D1D;
+	margin-top: 10px;
+}
+
+.deck-speaker div:nth-child(1), .deck-speaker div:nth-child(5) {
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+.deck-speaker div:nth-child(2), .deck-speaker div:nth-child(4) {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.spool {
+	z-index: -1;
+	background: url("av-spool.png");
+	height: 100%;
+	width: 100%;
+	border-radius: 100%;
+	-webkit-animation: spin 8s linear infinite;
+	animation: spin 8s linear infinite;
+}
+
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	
+	to {
+		-webkit-transform: rotate(-360deg);
+	}
+}
+
+.spool-hold {
+	height: 76px;
+	width: 76px;
+	position: absolute;
+	left: 28.5%;
+	top: 35.5%;
+	margin-left: -38px !important;
+	background: #292b2e;
+
+	border-radius: 100%;
+	box-shadow: rgba(0,0,0,0.5) 0 -3px 5px,rgba(255,255,255,0.5) 0 3px 5px;
+}
+
+.spool-hold:nth-child(2) {
+    left: 71.5%
+}
+
+figure{
+	margin: 0;
+}

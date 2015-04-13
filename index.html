@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+<script src="http://connect.soundcloud.com/sdk.js"></script>
+</head>
+<body>
+<div id="audio-player">
+	<div id="js-cassette">
+		<div class="cassette-label">Loading...</div>
+		<div class="spool-hold">
+			<figure id="spool1" class="spool"></figure>
+		</div>
+		<div class="spool-hold">
+			<figure id="spool2" class="spool"></figure>
+		</div>
+		<div class="deck-speaker">
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+			<div></div>
+		</div>
+
+		<div class="controls">
+			<audio id="audiostream"></audio>
+			<div id="playbtn" class="ctrl-btn"><img id="playimage" src="img/play.png"></img></div>
+			<div id="stopbtn" class="ctrl-btn"><img id="stopimage" src="img/stop.png"></img></div>
+			<div id="prevbtn" class="ctrl-btn"><img id="previousimage" src="img/prev.png"></img></div>
+			<div id="nextbtn" class="ctrl-btn"><img id="nextimage" src="img/next.png"></img></div>
+		</div>
+			<script src="tapeplayer.js"></script>
+		</div>
+		<img id="soundcloud-icon" src="img/soundcloud-black.png"></img>
+	</div>
+</div>
+<ul id="songlist"></ul>
+
+</body>
